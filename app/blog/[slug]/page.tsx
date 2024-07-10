@@ -4,6 +4,12 @@ type Params = {
   };
 };
 
+// this should run in server
+// Return a list of `params` to populate the [slug] dynamic segment
+export async function generateStaticParams() {
+  return [{ id: '1' }, { id: '2' }, { id: '3' }]
+}
+
 export async function generateMetadata({ params }: Params) {
   return { title: `Post: ${params.slug}` };
 }
