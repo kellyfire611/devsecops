@@ -1,3 +1,5 @@
+import 'styles/global.css';
+
 export default function RootLayout({
   children,
 }: {
@@ -5,6 +7,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link href="https://fonts.gstatic.com" />
+      </head>
       <body>{children}</body>
     </html>
   );

@@ -1,9 +1,19 @@
-const Configuration = {
-  /*
-   * Resolve and load @commitlint/config-conventional from node_modules.
-   * Referenced packages must be installed
-   */
+module.exports = {
   extends: ['@commitlint/config-conventional'],
+  rules: {
+    //   TODO Add Scope Enum Here
+    // 'scope-enum': [2, 'always', ['yourscope', 'yourscope']],
+    'type-enum': [
+      2,
+      'always',
+      [
+        'dev',
+        'fix',
+        'docs',
+        'ci',
+        'test',
+        'perf', // Cải thiện performance
+      ],
+    ],
+  },
 };
-
-export default Configuration;
