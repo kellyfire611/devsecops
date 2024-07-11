@@ -1,0 +1,1 @@
+var aws_access_key = "AKIASPx";
