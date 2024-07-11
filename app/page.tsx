@@ -2,7 +2,6 @@ export const metadata = {
   title: "Workshop Demo DevSecOps",
 };
 
-var a = 2;
 export default function Page() {
   return (
     <>
